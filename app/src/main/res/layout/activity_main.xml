@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    tools:ignore="MissingConstraints"
+    tools:viewBindingIgnore="true"
+    android:background="@color/bgColor">
+
+  <RelativeLayout
+      android:id="@+id/rlUserLogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="70dp">
+
+    <EditText
+        android:id="@+id/edtUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı adı" />
+
+    <EditText
+        android:id="@+id/edtUserPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifre"
+        android:layout_below="@id/edtUserId"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/userPageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUserPass"
+        android:background="@drawable/radiusbg"
+        android:text="Tamam"
+        android:textColor="@color/white" />
+  </RelativeLayout>
+
+</RelativeLayout>
