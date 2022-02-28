@@ -1,6 +1,7 @@
 package com.example.exampletrade.view
 
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -38,6 +39,14 @@ class MainActivity : AppCompatActivity(){
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+        //TODO
+        // Bu şekilde kullanılmamalı, ancak süre sorunu bulunduğu için servisten gelen bilgiler bekleme durumunda kullanıcı bilgilendirme amaçlıdır.
+        var progressDoalog:ProgressDialog
+        progressDoalog = ProgressDialog(this)
+        progressDoalog.setMax(10)
+        progressDoalog.setMessage("Yükleniyor")
+        progressDoalog.setProgressStyle(ProgressDialog.STYLE_SPINNER)
+        progressDoalog.show()
 
         val service = retrofit.create(TradeAPI::class.java)
         val call = service.getData(edtUserId.text.toString(), edtUserPass.text.toString())
@@ -45,6 +54,7 @@ class MainActivity : AppCompatActivity(){
         call.enqueue(object: Callback<ExampleJson2KtKotlin> {
             override fun onFailure(call: Call<ExampleJson2KtKotlin>, t: Throwable) {
                 t.printStackTrace()
+                progressDoalog.dismiss()
             }
 
             override fun onResponse(
@@ -68,6 +78,7 @@ class MainActivity : AppCompatActivity(){
                         return
                     }
                 }
+                progressDoalog.dismiss()
             }
         })
     }

@@ -19,14 +19,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hesap no"
+            android:text="Hesap numaranız:"
+            android:textSize="20sp"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/txtWalletId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Numara"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -45,7 +47,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/walletTxt"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/llSumInfo">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -61,5 +64,31 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/llSumInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toplam Tutar:"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/totalSumTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toplam Tutar"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    </LinearLayout>
 
 </RelativeLayout>

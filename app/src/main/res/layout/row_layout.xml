@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginBottom="2dp"
+    android:layout_marginBottom="10dp"
     android:background="@drawable/radiusbg"
     >
 
@@ -18,10 +18,10 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@android:color/black"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
             android:layout_weight="1"
             android:text="Menkul"/>
 
@@ -31,10 +31,10 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@android:color/white"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
             android:layout_weight="1"/>
 
     </LinearLayout>
@@ -49,10 +49,10 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@android:color/black"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
             android:layout_weight="1"
             android:text="Miktar T2"/>
 
@@ -62,10 +62,10 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
         android:layout_weight="1"/>
 
     </LinearLayout>
@@ -80,10 +80,10 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@android:color/black"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
             android:layout_weight="1"
             android:text="Fiyat"/>
 
@@ -93,10 +93,10 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
         android:layout_weight="1"/>
 
     </LinearLayout>
@@ -111,10 +111,10 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@android:color/black"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
             android:layout_weight="1"
             android:text="Tutar"/>
 
@@ -124,10 +124,10 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="@android:color/white"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
             android:layout_weight="1"/>
 
     </LinearLayout>

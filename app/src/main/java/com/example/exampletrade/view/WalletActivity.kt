@@ -58,12 +58,18 @@ class WalletActivity : AppCompatActivity(), RecyclerViewAdapter.Listener {
 
             override fun onResponse(call: Call<JsonKtModel>, response: Response<JsonKtModel>) {
                 if (response.isSuccessful) {
+                    var total:Double=0.0
                         Toast.makeText(applicationContext,response.body()?.Result?.Description.toString(),
                             Toast.LENGTH_LONG).show()
                         response.body()?.Item.let {
                             tradeModels = ArrayList(it)
                             recyclerViewAdapter = RecyclerViewAdapter(tradeModels!!,this@WalletActivity)
                             recyclerView.adapter = recyclerViewAdapter
+
+                            for (i in 0 until tradeModels!!.size){
+                                total += tradeModels!!.get(i).QtyT2!! * tradeModels!!.get(i).LastPx!!
+                            }
+                            totalSumTxt.text = total.toString()
                         }
                 }
                 else{

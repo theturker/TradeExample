@@ -15,29 +15,35 @@
       android:layout_height="wrap_content"
       android:layout_centerHorizontal="true"
       android:layout_centerVertical="true"
-      android:layout_marginStart="70dp">
+      android:layout_marginStart="80dp">
 
     <EditText
         android:id="@+id/edtUserId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Kullanıcı adı" />
+        android:drawableStart="@drawable/ic_baseline_account_circle_24"
+        android:hint="@string/user_name"
+        android:textAlignment="center"/>
 
     <EditText
         android:id="@+id/edtUserPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Şifre"
         android:layout_below="@id/edtUserId"
-        android:inputType="textPassword"/>
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/userPageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edtUserPass"
+        android:layout_marginTop="30dp"
         android:background="@drawable/radiusbg"
-        android:text="Tamam"
+        android:text="@string/btnOk"
         android:textColor="@color/white" />
   </RelativeLayout>
 
